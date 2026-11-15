@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title data-es="Spirit y Opportunity | Cortometraje" data-en="Spirit &amp; Opportunity | Short Film">Spirit y Opportunity | Cortometraje</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<style>
+body{
+  min-height:100vh;
+  background:#02070c;
+}
+
+.movie-page{
+  min-height:calc(100vh - 70px);
+  display:grid;
+  place-items:center;
+  padding:12px 2%;
+}
+
+.movie-screen{
+  width:min(1600px,100%);
+  margin:0 auto;
+  border:1px solid var(--line);
+  background:#000;
+  box-shadow:0 0 45px rgba(57,217,255,.1),0 0 100px rgba(0,0,0,.85);
+  position:relative;
+}
+
+.movie-screen::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  border:1px solid rgba(57,217,255,.08);
+  z-index:2;
+}
+
+.movie-frame{
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  background:#000;
+}
+
+.movie-frame iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+@media(max-width:650px){
+  .movie-page{
+    min-height:calc(100vh - 60px);
+    padding:6px 1%;
+  }
+
+  .movie-screen{
+    width:100%;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<nav class="nav">
+
+  <a
+    class="logo"
+    href="index.html"
+    data-es="NASA // MISSION CONTROL"
+    data-en="NASA // MISSION CONTROL"
+  >
+    NASA // MISSION CONTROL
+  </a>
+
+  <a
+    href="spirit-opportunity.html"
+    data-es="Spirit y Opportunity"
+    data-en="Spirit &amp; Opportunity"
+  >
+    Spirit y Opportunity
+  </a>
+
+  <a
+    href="voyager.html"
+    data-es="Voyager"
+    data-en="Voyager"
+  >
+    Voyager
+  </a>
+
+  <a
+    href="curiosity.html"
+    data-es="Curiosity"
+    data-en="Curiosity"
+  >
+    Curiosity
+  </a>
+
+  <a
+    href="pioneer.html"
+    data-es="Pioneer"
+    data-en="Pioneer"
+  >
+    Pioneer
+  </a>
+
+  <button class="lang" id="langButton">
+    🇺🇸 English
+  </button>
+
+</nav>
+
+
+<main class="movie-page">
+  <section class="movie-screen" aria-label="Cortometraje Spirit y Opportunity">
+    <div class="movie-frame">
+      <iframe
+        src="https://drive.google.com/file/d/1a-nrfBL5-QTgfYW8f7A4zR0t5y7RGNd9/preview"
+        title="Spirit y Opportunity — Cortometraje"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+</main>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
